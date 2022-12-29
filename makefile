@@ -38,3 +38,6 @@ build:
 
 pypi-test: build
 	venv/bin/python -m twine upload --repository testpypi dist/*
+
+pypi: build
+	venv/bin/python -m twine upload dist/*
