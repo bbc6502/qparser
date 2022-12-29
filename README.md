@@ -1,5 +1,21 @@
 # qparser
-Query Parser
+A Query Parser
+
+<a href="https://github.com/bbc6502/qparser/actions">
+    <img src="https://github.com/bbc6502/qparser/workflows/CI/badge.svg" alt="Build Status">
+</a>
+<a href="https://pypi.org/project/bbc6502/">
+    <img src="https://badge.fury.io/py/qparser.svg" alt="Package version">
+</a>
+
+Usage
+=====
+
+    from qparser import query 
+    terms = query("bob AND alice")
+
+Syntax
+======
 
     query = and | or | not | near | has | sequence | exact | token
     and = query "AND" query | "{" query { query } "}"
@@ -14,6 +30,7 @@ Query Parser
     space = " "
 
 Examples
+========
 
 | Query                         | Matches                                             |
 |-------------------------------|-----------------------------------------------------|
